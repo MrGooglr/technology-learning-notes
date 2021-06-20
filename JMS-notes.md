@@ -22,8 +22,10 @@ The JMS API enhances the Java EE platform by simplifying enterprise development,
 ## Messaging Domains
 
 1. Point-to-Point Messaging Domain
-   A point-to-point (PTP) product or application is built on the concept of message queues, senders, and receivers. Each message is addressed to a specific queue, and receiving clients extract messages from the queues established to hold their messages. Queues retain all messages sent to them until the messages are consumed or expire.
+   
+A point-to-point (PTP) product or application is built on the concept of message queues, senders, and receivers. Each message is addressed to a specific queue, and receiving clients extract messages from the queues established to hold their messages. Queues retain all messages sent to them until the messages are consumed or expire.
    Use PTP messaging when every message you send must be processed successfully by one consumer.
 
 1. Publish/Subscribe Messaging Domain
+
  
