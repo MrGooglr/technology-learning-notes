@@ -43,7 +43,7 @@ Messaging products are inherently asynchronous: There is no fundamental timing d
 > No Producee and Consumer directly call or interact with each other, intead they have MQ as a middleware (MOM: Message Orieneted Middleware).
 
 Refer the image below:
-
+<div align="center">
 ![Basic Elements of a JMS Application System](/image_resources/to_JMSAppElements.gif)
-
+</div>
 The broker here is the MQ from vendor.
