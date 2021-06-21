@@ -1,4 +1,4 @@
-<div align="center" font-size="32px">JMS - Concepts</div>
+<div align="center" font-size="32px"><h6><b>JMS - Concepts</b></h6></div>
 
 ## JMS Overview
 
