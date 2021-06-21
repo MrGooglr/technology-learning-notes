@@ -28,4 +28,22 @@ A point-to-point (PTP) product or application is built on the concept of message
 
 1. Publish/Subscribe Messaging Domain
 
- 
+In a publish/subscribe (pub/sub) product or application, clients address messages to a topic, which functions somewhat like a bulletin board. Publishers and subscribers are generally anonymous and can dynamically publish or subscribe to the content hierarchy. The system takes care of distributing the messages arriving from a topic’s multiple publishers to its multiple subscribers. Topics retain messages only as long as it takes to distribute them to current subscribers. 
+
+### Message Consumption
+
+Messaging products are inherently asynchronous: There is no fundamental timing dependency between the production and the consumption of a message. However, the JMS specification uses this term in a more precise sense. Messages can be consumed in either of two ways:
+
+1. Synchronously: A subscriber or a receiver explicitly fetches the message from the destination by calling the receive method. The receive method can block until a message arrives or can time out if a message does not arrive within a specified time limit.
+1. Asynchronously: A client can register a message listener with a consumer. A message listener is similar to an event listener. Whenever a message arrives at the destination, the JMS provider delivers the message by calling the listener’s onMessage method, which acts on the contents of the message.
+
+> ***NOTE:*** What MQs are doing here in JMS?
+> JMS is an API and there are multiple implementations of it available.
+> A Message Queue (MQ) is just one of these implementaions and is an application server.
+> No Producee and Consumer directly call or interact with each other, intead they have MQ as a middleware (MOM: Message Orieneted Middleware).
+
+Refer the image below:
+
+![Basic Elements of a JMS Application System](/image_resources/to_JMSAppElements.gif)
+
+The broker here is the MQ from vendor.
