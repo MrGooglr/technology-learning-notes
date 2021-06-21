@@ -1,4 +1,4 @@
-<div align="center" font-size="32px"><h6><b>JMS - Concepts</b></h6></div>
+<div align="center" font-size="32px"><h1><b>JMS - Concepts</b></h1></div>
 
 ## JMS Overview
 
@@ -45,5 +45,5 @@ Messaging products are inherently asynchronous: There is no fundamental timing d
 Refer the image below:
 <div align="center">
  <img src="/image_resources/to_JMSAppElements.gif">
+	The broker here is the MQ from vendor.
 </div>
-The broker here is the MQ from vendor.
