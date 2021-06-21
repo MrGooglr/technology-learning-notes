@@ -44,6 +44,6 @@ Messaging products are inherently asynchronous: There is no fundamental timing d
 
 Refer the image below:
 <div align="center">
-![Basic Elements of a JMS Application System](/image_resources/to_JMSAppElements.gif)
+ <img src="/image_resources/to_JMSAppElements.gif">
 </div>
 The broker here is the MQ from vendor.
